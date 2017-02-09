@@ -10,4 +10,7 @@ h3 {
     margin: 20px 0;
 }
 
-#result { margin-top: 20px; }
+#result {
+    margin-top: 20px;
+    font-size: .8em;
+}
