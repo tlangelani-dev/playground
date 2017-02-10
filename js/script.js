@@ -11,7 +11,7 @@ $(document).ready(function() {
     out('APP READY<br />');
 
     // launch app from device
-    var intentOpenApp = 'intent://scan/#Intent;scheme='+scheme+';package='+package+';end';
+    var intentOpenApp = 'intent://scan/#Intent;scheme='+spreeza+';package='+package+';end';
 
     // view app from google store
     var intentViewApp = 'intent://details?id='+package+'&amp;url=spree.co.za#Intent;scheme='+scheme+';action=android.intent.action.VIEW;package='+package+';end';
@@ -28,6 +28,9 @@ $(document).ready(function() {
         out(window.location = intentViewApp);
     });
 
+    /**
+     * FUNCTIONS
+     */
     function out(message) {
         result.append(message);
     }
