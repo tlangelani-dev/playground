@@ -4,24 +4,32 @@ $(document).ready(function() {
     var viewApp = $('#view');
     var result = $('#result');
 
-    result.append('APP READY<br />');
+    // android settings
+    var scheme = 'market';
+    var package = 'com.spreeza.shop';
+
+    out('APP READY<br />');
 
     // launch app from device
-    var intentOpenApp = 'intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;end';
+    var intentOpenApp = 'intent://scan/#Intent;scheme='+scheme+';package='+package+';end';
 
     // view app from google store
-    var intentViewApp = 'intent://details?id=com.spreeza.shop&amp;url=spree.co.za#Intent;scheme=market;action=android.intent.action.VIEW;package=com.spreeza.shop;end';
+    var intentViewApp = 'intent://details?id='+package+'&amp;url=spree.co.za#Intent;scheme='+scheme+';action=android.intent.action.VIEW;package='+package+';end';
 
     /**
      * EVENTS
      */
     openApp.on('click', function(evt) {
-        result.append('OPENING...<br />');
-        window.location = intentOpenApp;
+        out('OPENING...<br />');
+        out(window.location = intentOpenApp);
     });
     viewApp.on('click', function(evt) {
-        result.append('VIEWING...<br />');
-        window.location = intentViewApp;
+        out('VIEWING...<br />');
+        out(window.location = intentViewApp);
     });
+
+    function out(message) {
+        result.append(message);
+    }
 
 });
