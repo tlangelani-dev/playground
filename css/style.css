@@ -10,6 +10,8 @@ h3 {
     margin: 20px 0;
 }
 
+button { outline: none; }
+
 #result {
     margin-top: 20px;
     font-size: .8em;

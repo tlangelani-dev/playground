@@ -5,7 +5,7 @@ $(document).ready(function() {
     var result = $('#result');
 
     // android settings
-    var scheme = 'com.spreeza.shop';
+    var scheme = 'spreeza';
     var package = 'com.spreeza.shop';
 
     out('APP READY<br />');
