@@ -1,0 +1,20 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server -a 127.0.0.1 -p 8090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlangelani-dev/playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlangelani-dev/playground/issues"
+  },
+  "homepage": "https://github.com/tlangelani-dev/playground#readme"
+}
