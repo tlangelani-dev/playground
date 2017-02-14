@@ -16,3 +16,4 @@ button { outline: none; }
     margin-top: 20px;
     font-size: .8em;
 }
+.hide { display: none; }
