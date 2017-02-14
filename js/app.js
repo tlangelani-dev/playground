@@ -10,17 +10,17 @@ $(document).ready(function() {
     var $linkWeb = $('#link.web');
     var $linkScheme = $('#link.scheme');
 
-    out('APP SCRIPT READY<br />');
+    out('APP SCRIPT READY 1<br />');
     
     $linkWeb.on('click', function(evt) {
         evt.preventDefault();
-        out(window.location = links.web);
+        window.location = links.web;
 
     });
 
     $linkScheme.on('click', function(evt) {
         evt.preventDefault();
-        out(window.location = links.scheme);
+        window.location = links.scheme;
     });
 
     /**
