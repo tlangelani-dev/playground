@@ -10,7 +10,7 @@ $(document).ready(function() {
     var $linkWeb = $('#link-web');
     var $linkScheme = $('#link-scheme');
 
-    out('APP SCRIPT READY 1<br />');
+    out('APP SCRIPT READY 2<br />');
     
     $linkWeb.on('click', function(evt) {
         evt.preventDefault();
