@@ -7,20 +7,21 @@ $(document).ready(function() {
         scheme: 'spree://'
     };
 
-    var $linkWeb = $('#link.web');
-    var $linkScheme = $('#link.scheme');
+    var $linkWeb = $('#link-web');
+    var $linkScheme = $('#link-scheme');
 
     out('APP SCRIPT READY 1<br />');
     
     $linkWeb.on('click', function(evt) {
         evt.preventDefault();
-        window.location = links.web;
-
+        out('WEB LINK CLICKED');
+        out(window.location = links.web);
     });
 
     $linkScheme.on('click', function(evt) {
         evt.preventDefault();
-        window.location = links.scheme;
+        out('WEB SCHEME CLICKED');
+        out(window.location = links.scheme);
     });
 
     /**
