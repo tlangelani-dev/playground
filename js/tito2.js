@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
+    var result = $('#result');
+
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
         out('IOS DEVICE');
     } else if (/Android/i.test(navigator.userAgent)) {
         out('ANDROID DEVICE');
     }
-
-    var result = $('#result');
 
     var links = {
         web: 'https://www.spree.co.za',
@@ -34,6 +34,6 @@ $(document).ready(function() {
      * FUNCTIONS
      */
     function out(message) {
-        result.append(message);
+        result.append(message + "<br />");
     }
 });
