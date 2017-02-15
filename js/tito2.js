@@ -1,6 +1,10 @@
 $(document).ready(function() {
 
-    out(navigator.userAgent);
+    if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+        out('IOS DEVICE');
+    } else if (/Android/i.test(navigator.userAgent)) {
+        out('ANDROID DEVICE');
+    }
 
     var result = $('#result');
 
