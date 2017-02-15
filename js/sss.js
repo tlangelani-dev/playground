@@ -19,9 +19,14 @@ $(document).ready(function() {
     out('APP SCRIPT READY 2<br />');
     
     $linkWeb.on('click', function(evt) {
-        evt.preventDefault();
-        out('WEB LINK CLICKED');
-        out(window.location = links.web);
+        // evt.preventDefault();
+        // out('WEB LINK CLICKED');
+        // out(window.location = links.web);
+        out('WELL');
+        setTimeout(function() {
+                window.location = 'https://play.google.com/store/apps/details?id=com.spreeza.shop&hl=en';
+            }, 30);
+            window.location = 'https://www.spree.co.za';
     });
 
     $linkScheme.on('click', function(evt) {
