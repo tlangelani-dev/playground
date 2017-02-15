@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    out('DEVICE:', navigator.userAgent);
+    out(navigator.userAgent);
 
     var result = $('#result');
 
