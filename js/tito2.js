@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    out('DEVICE:', $.browser.device);
+
     var result = $('#result');
 
     var links = {
