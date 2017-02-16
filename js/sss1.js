@@ -23,10 +23,10 @@ $(document).ready(function() {
         // out('WEB LINK CLICKED');
         // out(window.location = links.web);
         out('WELL');
-        setTimeout(function() {
-                window.location = 'https://play.google.com/store/apps/details?id=com.spreeza.shop&hl=en';
-            }, 30);
-            window.location = 'https://www.spree.co.za';
+        // setTimeout(function() {
+        //         window.location = 'https://play.google.com/store/apps/details?id=com.spreeza.shop&hl=en';
+        //     }, 30);
+        window.location.href = 'market://details?id=com.spreeza.shop';
     });
 
     $linkScheme.on('click', function(evt) {
